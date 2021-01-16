@@ -1,0 +1,17 @@
+//create dump
+(base) [serge@bsn ~]$ mysqldump example > example.sql
+
+(base) [serge@bsn ~]$ mysql
+
+//create new db sample
+mysql> CREATE DATABASE sample;
+Query OK, 1 row affected (0.02 sec)
+
+
+mysql> USE sample;
+Database changed
+
+//load context of dump to new db
+mysql> source example.sql
+Query OK, 0 rows affected (0.00 sec)
+
