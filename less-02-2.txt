@@ -1,0 +1,16 @@
+//create db
+mysql> CREATE DATABASE example;
+Query OK, 1 row affected (0.01 sec)
+
+//select created early db example
+mysql> use example
+Database changed
+
+//create table users with colomns: id(INT) and name (VARCHAR)
+DROP TABLES IF EXISTS users;
+CREATE TABLE users (
+    id INT PRIMARY KEY,
+    name VARCHAR(255) 
+);
+
+
